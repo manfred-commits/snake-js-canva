@@ -1,0 +1,50 @@
+/* reset rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* general rules */
+body{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'DotGothic16', sans-serif;
+}
+h1{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+canvas{
+    margin-top: 20px;
+    box-shadow: -1px 1px 10px 1px grey;
+}
+#game{
+    width: 60%;
+    height: 50%;
+}
+@media screen and (min-width: 300px) {
+    #game {
+        width: 70%;
+        height: 70%;
+
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width: 609px) {
+    #game {
+        width: 40%;
+        height: 70%;
+
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
