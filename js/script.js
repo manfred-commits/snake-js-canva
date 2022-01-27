@@ -122,7 +122,7 @@ function snakeCreation(){
 
     }
     // head of the snake
-    context.fillStyle="green";
+    context.fillStyle="white";
     context.fillRect(headX*cellsCount,headY*cellsCount,cellSize,cellSize);
 }
 
