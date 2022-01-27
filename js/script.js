@@ -132,8 +132,17 @@ function changeSnakePosition(){
 }
 function appleCollision(){
     if(headX==appleX && headY==appleY){
-        appleX=Math.floor(Math.random() * cellsCount);
-        appleY=Math.floor(Math.random() * cellsCount);
+        for(let i=0;i<snakeParts.length;i++){
+
+            if(snakeParts[i].x==appleX){
+                appleX=Math.floor(Math.random() * cellsCount);
+            }
+            if(snakeParts[i].y==appleY){
+                appleY=Math.floor(Math.random() * cellsCount);
+            }
+        }
+        
+        
         tailLenght++;
         score++;
         speed=speed+0.2;
