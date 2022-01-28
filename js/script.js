@@ -79,21 +79,14 @@ function gameOver(){
     }else if(headY>cellsCount-1){
         gameCondition=true;
     }
-    for(let i=0;i<snakeParts.length;i++){
-        let part=snakeParts[i];
+    snakeParts.forEach((part)=>{
+
         if(part.x == headX && part.y==headY){
             gameCondition=true;
             return gameCondition;
         }
-    }
-    // snakeParts.forEach((part)=>{
 
-        // if(part.x == headX && part.y){
-        //     gameCondition=true;
-        //     return;
-        // }
-
-    // });    
+    });    
     return gameCondition;
 }
 
